@@ -30,12 +30,18 @@ header {
       @media screen and (max-width: 500px) {
         padding-left: 10px;
       }
+      @media screen and (max-width: 400px) {
+        padding: 0;
+      }
     }
     a {
       color: var(--font-color1);
       text-decoration: none;
       @media screen and (max-width: 500px) {
         font-size: 15px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 10px;
       }
     }
     a:hover {
@@ -70,6 +76,9 @@ header {
     @media screen and (max-width: 500px) {
       font-size: 40px;
       padding-top: 60vh;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 30px;
     }
   }
 }
@@ -207,6 +216,9 @@ section#activities {
   @media screen and (max-width: 500px) {
     height: 270vh;
   }
+  @media screen and (max-width: 400px) {
+    height: 220vh;
+  }
 
   h4 {
     color: var(--font-color1);
@@ -317,6 +329,9 @@ section#newsletter {
     @media screen and (max-width: 500px) {
       margin-bottom: 35vh;
     }
+    @media screen and (max-width: 400px) {
+      margin-bottom: 20vh;
+    }
   }
 
   a {
@@ -386,10 +401,13 @@ footer {
     a {
       color: var(--font-color1);
       text-decoration: none;
+      @media screen and (max-width: 400px) {
+        color: black;
+      }
     }
 
     a:hover {
-      color: black;
+      color: var(--font-color1);
     }
   }
 }
