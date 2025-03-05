@@ -263,8 +263,8 @@ section#activities {
         object-fit: cover;
         object-position: center;
         @media screen and (max-width: 500px) {
-          width: 60%;
-          height: 20%;
+          width: 100vw;
+          height: 50vh;
         }
       }
       p {
