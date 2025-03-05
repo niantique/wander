@@ -83,7 +83,7 @@ section#travel {
     }
     .left {
       background-image: url(https://images.unsplash.com/photo-1507880572231-f85401ce76e6?q=80&w=2158&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-      height: 600px;
+      height: 100vh;
       background-size: cover;
       background-position: center;
       padding-top: 20px;
@@ -202,8 +202,12 @@ section#description {
 
 section#activities {
   background-color: var(--background-color);
-  height: 700px;
+  height: 100vh;
   padding-top: 100px;
+  @media screen and (max-width: 500px) {
+    height: 270vh;
+  }
+
   h4 {
     color: var(--font-color1);
     text-align: center;
@@ -215,10 +219,17 @@ section#activities {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
     .activity1,
     .activity2,
     .activity3 {
       margin-right: 20px;
+      @media screen and (max-width: 500px) {
+        margin-right: 0;
+      }
     }
 
     .activity1:hover p,
@@ -231,11 +242,18 @@ section#activities {
     .activity2,
     .activity3,
     .activity4 {
+      @media screen and (max-width: 500px) {
+        padding-bottom: 5%;
+      }
       img {
-        width: 300px;
-        height: 450px;
+        width: 20vw;
+        height: 60vh;
         object-fit: cover;
         object-position: center;
+        @media screen and (max-width: 500px) {
+          width: 60%;
+          height: 20%;
+        }
       }
       p {
         visibility: hidden;
@@ -251,10 +269,16 @@ section#activities {
 
 section#oahu {
   display: flex;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 
   .leftoahu,
   .rightoahu {
     width: 50%;
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
   }
   .rightoahu {
     background-image: url(https://images.pexels.com/photos/2127969/pexels-photo-2127969.jpeg);
@@ -290,6 +314,9 @@ section#newsletter {
     color: rgb(0, 45, 58);
     font-weight: 600;
     margin-bottom: 360px;
+    @media screen and (max-width: 500px) {
+      margin-bottom: 35vh;
+    }
   }
 
   a {
@@ -335,6 +362,9 @@ footer {
     padding-top: 35px;
     font-size: 20px;
     font-weight: 500;
+    @media screen and (max-width: 500px) {
+      padding: 0;
+    }
     ul {
       padding-right: 125px;
 
