@@ -365,11 +365,21 @@ footer {
     @media screen and (max-width: 500px) {
       padding: 0;
     }
+    @media screen and (max-width: 400px) {
+      padding-left: 0;
+      padding-top: 5%;
+      font-size: 18px;
+    }
+   
     ul {
       padding-right: 125px;
+      @media screen and (max-width: 400px) {
+        padding-right: 0;
+      }
 
       li {
         list-style-type: none;
+        
       }
     }
 
