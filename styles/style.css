@@ -64,7 +64,7 @@ header {
   }
   h1 {
     color: var(--font-color1);
-    font-size: 130px;
+    font-size: 800%;
     padding-top: 38vw;
     text-align: center;
     @media screen and (max-width: 500px) {
